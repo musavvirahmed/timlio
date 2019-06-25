@@ -1381,7 +1381,7 @@ textarea.form-control {
     max-width: 540px;
   }
   .section {
-    padding: 110px 0;
+    padding: 100px 0;
   }
   .section-nav {
     margin: 45px 0 -111px;
@@ -1393,7 +1393,7 @@ textarea.form-control {
     padding: 176px 0 60px;
   }
   .section-main .title {
-    max-width: 754px;
+    max-width: 654px;
   }
   .section-main .text {
     max-width: 456px;
@@ -1516,7 +1516,7 @@ textarea.form-control {
 
 @media (min-width: 1200px) {
   .section-main {
-    padding-bottom: 126px;
+    padding-bottom: 100px;
   }
   .section-main .preview {
     top: 6px;
