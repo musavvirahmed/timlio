@@ -718,7 +718,7 @@ textarea.form-control {
 .hr {
   width: 150px;
   height: 1px;
-  margin: 36px 0;
+  margin: 80px 0;
   background: rgba(0, 0, 0, 0);
 }
 
@@ -744,7 +744,7 @@ textarea.form-control {
 }
 
 .center {
-  max-width: 554px;
+  max-width: 855px;
   margin: 0 auto 50px;
   text-align: center;
 }
