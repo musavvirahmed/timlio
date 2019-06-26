@@ -93,11 +93,23 @@ textarea.form-control {
   color: #2B292D;
 }
 
+.disabled {
+  pointer-events: none;
+  opacity: 0.4;
+}
+
 .btn-outline-primary {
   padding: 11px 27px;
   border: 1px solid #3041C4;
   background: none;
   color: #3041C4;
+}
+
+.btn-outline-tertiary {
+  padding: 11px 27px;
+  border: 1px solid rgba(43, 41, 45, 0.2);
+  background: none;
+  color: rgba(43, 41, 45, 0.4)
 }
 
 .btn-outline-primary:hover {
@@ -1064,7 +1076,7 @@ textarea.form-control {
   transition: all .2s;
 }
 
-.price:hover {
+.price-augmented-hover {
   background: white;
   border-color: transparent;
   -webkit-box-shadow: 0 13px 18px -8px rgba(0, 0, 0, 0.15), 0 11px 55px 10px rgba(0, 0, 0, 0.07);
@@ -1086,6 +1098,7 @@ textarea.form-control {
 }
 
 .price-title {
+  text-align: center;
   margin-bottom: 14px;
   font-size: 26px;
 }
@@ -1096,6 +1109,8 @@ textarea.form-control {
 }
 
 .price-value {
+  text-align: center;
+  font-weight: bold;
   margin-bottom: 36px;
   font-size: 22px;
 }
@@ -1114,7 +1129,7 @@ textarea.form-control {
 }
 
 .price-save strong {
-  color: #E22729;
+  color: #8275FE;
 }
 
 .price-list {
@@ -1302,7 +1317,7 @@ textarea.form-control {
     position: absolute;
     top: 74px;
     right: -40px;
-    width: 612px;
+    width: 220px;
     padding: 30px 30px 0;
     background: white;
     -webkit-box-shadow: 0 13px 18px -8px rgba(0, 0, 0, 0.15), 0 29px 45px 4px rgba(0, 0, 0, 0.08), 0 11px 55px 10px rgba(0, 0, 0, 0.07);
