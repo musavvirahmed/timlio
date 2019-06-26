@@ -6,7 +6,7 @@ Timlio - Simple landing page for collecting sign ups via Mailchimp for R+W PPO p
 
 ## Demo
 
-https://musavvirahmed.github.io/timli/
+https://timlio.com/
 
 ## License
 
