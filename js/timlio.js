@@ -17,6 +17,9 @@ function trackRequestAccess(email, language) {
     mixpanel.register({
       "email": email
     });
+    mixpanel.alias({
+      "email": email
+    });
     mixpanel.identify(email);
     mixpanel.people.set({
       "$email": email
@@ -31,6 +34,33 @@ function trackRequestAccess(email, language) {
   } else {
     alert("You have entered an invalid email address!");
   }
+}
+
+function trackShowInterest(placement) {
+  mixpanel.track(
+    "Show Interest",
+    {
+      "placement": placement
+    }
+  );
+}
+
+function trackGoToPage(targetPage) {
+  mixpanel.track(
+    "Go to Page",
+    {
+      "target-page": targetPage
+    }
+  );
+}
+
+function trackChangeLanguage(language) {
+  mixpanel.track(
+    "Change Language",
+    {
+      "language": language
+    }
+  );
 }
 
 // check if touch device
