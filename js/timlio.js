@@ -63,6 +63,13 @@ function trackChangeLanguage(language) {
   );
 }
 
+function trackPageLoaded() {
+  var from = document.referrer;
+  mixpanel.track(
+    "Page Loaded"
+  );
+}
+
 // check if touch device
 function isTouchDevice(){
   var prefixes = ' -webkit- -moz- -o- -ms- '.split(' ');
