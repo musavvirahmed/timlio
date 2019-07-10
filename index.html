@@ -34,7 +34,7 @@
     <meta property="og:site_name" content="">
     <meta property="fb:admins" content="">
   </head>
-  <body>
+  <body onload="trackPageLoaded()">
     <!-- BEGIN page -->
     <div class="page">
       <!-- BEGIN header -->
@@ -56,13 +56,13 @@
             <div class="collapse navbar-collapse" id="navbarDropdown">
               <ul class="navbar-nav">
                 <li class="nav-item">
-                  <a class="nav-link active" href="#">Home</a>
+                  <a class="nav-link active" href="#" id="home">Home</a>
                 </li>
                 <li class="nav-item">
-                  <a class="nav-link" href="about-us.html">About Us</a>
+                  <a class="nav-link" href="about-us.html" id="about-us" onclick="trackGoToPage(this.id)">About Us</a>
                 </li>
                 <li class="nav-item">
-                  <a class="nav-link" href="pricing.html">Pricing</a>
+                  <a class="nav-link" href="pricing.html" id="pricing" onclick="trackGoToPage(this.id)">Pricing</a>
                 </li>
                 <li class="nav-item">
                   <a class="nav-link nav-link-drop" href="#">
@@ -80,17 +80,17 @@
                       </div>
                       <div class="col-md-6">
                         <a class="nav-group" href="#">
-                          <div class="nav-title">中文</div>
+                          <div class="nav-title" id="zh" onclick="trackChangeLanguage(this.id)">中文</div>
                         </a>
                       </div>
                       <div class="col-md-6">
                         <a class="nav-group" href="#">
-                          <div class="nav-title">বাংলা</div>
+                          <div class="nav-title" id="bd" onclick="trackChangeLanguage(this.id)">বাংলা</div>
                         </a>
                       </div>
                       <div class="col-md-6">
                         <a class="nav-group" href="index-id.html">
-                          <div class="nav-title">bahasa Indonesia</div>
+                          <div class="nav-title" id="id" onclick="trackChangeLanguage(this.id)">bahasa Indonesia</div>
                         </a>
                       </div>
                     </div>
@@ -191,13 +191,17 @@
                 <div class="text text-sm">Timlio is in closed beta now. Enter your email and we’ll get back to you if you’re a suitable user. 😊</div>
                 <div class="subscribe">
                   
-                  <form class="subscribe-form" method="POST" action="https://gmail.us20.list-manage.com/subscribe/post?u=fcd4ce17c9e985129f1e17b2a&amp;id=ce5a794ca9" id="mc-embedded-subscribe-form" name="mc-embedded-subscribe-form" target="_blank">
+                  <form class="subscribe-form" id="mc-embedded-subscribe-form" name="mc-embedded-subscribe-form">
                     <div class="form-group">    
                       <input class="form-control" ype="email" value="" name="EMAIL" class="required email" id="mce-EMAIL" placeholder="Enter your email" required="">
                     </div>
                     <!-- real people should not fill this in and expect good things - do not remove this or risk form bot signups-->
                     <div style="position: absolute; left: -5000px;" aria-hidden="true"><input type="text" name="b_fcd4ce17c9e985129f1e17b2a_ce5a794ca9" tabindex="-1" value=""></div>
-                    <button class="btn btn-primary" type="submit" name="subscribe" id="mc-embedded-subscribe">Request Access</button>
+                    <button class="btn btn-primary"
+                            onclick="trackRequestAccess(document.getElementById('mce-EMAIL').value, document.documentElement.lang)"
+                            type="submit" name="subscribe" id="mc-embedded-subscribe">
+                      Request Access
+                    </button>
                   </form>
 
                   <div class="subscribe-content">Free during closed beta · Quit any time. Check out <a href="#">Terms of Use</a>.</div>
