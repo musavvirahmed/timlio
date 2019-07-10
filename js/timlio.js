@@ -17,10 +17,7 @@ function trackRequestAccess(email, language) {
     mixpanel.register({
       "email": email
     });
-    mixpanel.alias({
-      "email": email
-    });
-    mixpanel.identify(email);
+    mixpanel.alias(email);
     mixpanel.people.set({
       "$email": email
     });
