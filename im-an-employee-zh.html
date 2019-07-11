@@ -1,8 +1,8 @@
 <!doctype html>
-<html lang="en">
+<html lang="zh">
   <head>
     <meta charset="utf-8">
-    <title>Timlio - People ops by real people</title>
+    <title>Timlio - 真人來幫您人力運營</title>
     <meta http-equiv="X-UA-Compatible" content="IE=Edge">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <meta name="theme-color" content="#fff">
@@ -41,13 +41,13 @@
       <header class="header header-main">
         <div class="container">
           <nav class="navbar navbar-expand-lg">
-            <a class="navbar-brand" href="/">
+            <a class="navbar-brand" href="index-zh.html">
               <div class="navbar-logo">
                 <img class="navbar-pic" src="img/timlio-logo.png" srcset="img/timlio-logo@2x.png 2x" alt="Foundation">
               </div>
               <div class="navbar-group">
                 <div class="navbar-title">Timlio</div>
-                <div class="navbar-text">People ops by real people</div>
+                <div class="navbar-text">真人來幫您人力運營</div>
               </div>
             </a>
             <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarDropdown" aria-controls="navbarDropdown" aria-expanded="false" aria-label="Toggle navigation">
@@ -56,13 +56,13 @@
             <div class="collapse navbar-collapse" id="navbarDropdown">
               <ul class="navbar-nav">
                 <li class="nav-item">
-                  <a class="nav-link" href="index.html">Home</a>
+                  <a class="nav-link" href="index-zh.html" id="home">首頁</a>
                 </li>
                 <li class="nav-item">
-                  <a class="nav-link" href="about-us.html">About Us</a>
+                  <a class="nav-link" href="about-us-zh.html" id="about-us" onclick="trackGoToPage(this.id)">關於我們</a>
                 </li>
                 <li class="nav-item">
-                  <a class="nav-link" href="pricing.html">Pricing</a>
+                  <a class="nav-link" href="pricing-zh.html" id="pricing" onclick="trackGoToPage(this.id)">定價</a>
                 </li>
                 <li class="nav-item">
                   <a class="nav-link nav-link-drop" href="#">
@@ -74,22 +74,22 @@
                   <div class="nav-drop">
                     <div>
                       <div class="col-md-6">
-                        <a class="nav-group disabled" href="#">
+                        <a class="nav-group" href="im-an-employee.html">
                           <div class="nav-title">English</div>
                         </a>
                       </div>
                       <div class="col-md-6">
-                        <a class="nav-group" href="im-a-manager-zh.html">
+                        <a class="nav-group disabled" href="#">
                           <div class="nav-title">中文</div>
                         </a>
                       </div>
                       <div class="col-md-6">
-                        <a class="nav-group" href="#">
+                        <a class="nav-group" href="im-an-employee-bn.html">
                           <div class="nav-title">বাংলা</div>
                         </a>
                       </div>
                       <div class="col-md-6">
-                        <a class="nav-group" href="#">
+                        <a class="nav-group" href="im-an-employee-id.html">
                           <div class="nav-title">bahasa Indonesia</div>
                         </a>
                       </div>
@@ -97,22 +97,23 @@
                   </div>
                 </li>
               </ul>
-              <a class="btn btn-primary" href="#req-access">Request Access</a>
+              <a class="btn btn-primary" href="#req-access">請求訪問</a>
             </div>
           </nav>
         </div>
       </header>
       <!-- END header -->
 
+
       <!-- BEGIN inner -->
       <div class="inner">
-        <div class="section section-main" style="background-image: linear-gradient(0deg, #FFE000 0%, #FFFF00 100%)">
+        <div class="section section-main" style="background-image: linear-gradient(0deg, #92DEFF 0%, #CAF4FF 100%)">
           <div class="container">
             <div class="section-body">
-              <h1 class="title">You’re the CEO / HR manager of a company.</h1>
-              <div class="text">Companies that encourage employee time off have better retention and profitability. Timlio can make time off management in your company super easy.</div>
+              <h1 class="title">如果您是位員工，Timlio能如何幫助您呢？</h1>
+              <div class="text">Timlio能夠協助您在何時何地請假。您的團員們將可以同步得知您的情況。</div>
               <div class="preview">
-                <img class="preview-pic" src="img/img-im-a-manager.png" srcset="img/img-im-a-manager@2x.png 2x" alt="I'm a manager">
+                <img class="preview-pic" src="img/img-im-an-employee.png" srcset="img/img-im-an-employee@2x.png 2x" alt="I'm an employee">
               </div>
             </div>
           </div>
@@ -124,17 +125,14 @@
             <div class="row">
               <div class="col-md-6 col-lg-7 mb-5 mb-lg-0">
                 <figure class="preview preview-mw">
-                  <img class="preview-pic" src="img/img-m-1.png" srcset="img/img-m-1@2x.png 2x" alt="">
+                  <img class="preview-pic" src="img/img-e-1.png" srcset="img/img-e-1@2x.png 2x" alt="employee balances and requests">
                 </figure>
               </div>
               <div class="col-md-6 col-lg-5">
                 <div class="wrap">
-                  <div class="title title-2">Create your own leave types</div>
-                  <div class="text">Setup your own set of leave types ranging from PTO, Vacation, Sick Days, Paternity Leave, Jury Duty, Bereavement Leave or anything else.</div>
-                  <a class="btn btn-primary" href="#req-access" id="create-leave-types"
-                    onclick="trackShowInterest(this.id)">
-                    I want to define different leaves
-                  </a>
+                  <div class="title title-2">員工請假時數總額與申請</div>
+                  <div class="text">所有員工們皆可下載一份精美請假時數表格。其內容包含請假時數結餘、請假申請，與已准假歷史。</div>
+                  <a class="btn btn-primary" href="#req-access">我想要使用</a>
                 </div>
               </div>
             </div>
@@ -148,14 +146,14 @@
             <div class="row">
               <div class="col-md-6 mb-5 mb-lg-0">
                 <div class="wrap">
-                  <div class="title title-2">Implement custom leave policies</div>
-                  <div class="text">Setup rules for leave accrual and define quotas for each leave type, how they carry over from year to year, whether leaves are taken in whole days or hourly. Need an exception? Managers can always overwrite people’s leave balances.</div>
-                  <a class="btn btn-primary" href="#req-access">Let’s start defining policies</a>
+                  <div class="title title-2">簡單操作介面</div>
+                  <div class="text">在SLACK上傳 "今日病假" 、"從1/25-1/28請假"、或是 "明日在家工作" 等訊息便可直接申請請假。</div>
+                  <a class="btn btn-primary" href="#req-access">我想要這樣使用SLACK</a>
                 </div>
               </div>
               <div class="col-md-6">
                 <figure class="preview">
-                  <img class="preview-pic" src="img/img-m-2.png" srcset="img/img-m-2@2x.png 2x" alt="">
+                  <img class="preview-pic" src="img/img-e-2.png" srcset="img/img-e-2@2x.png 2x" alt="simple control">
                 </figure>
               </div>
             </div>
@@ -169,14 +167,14 @@
             <div class="row">
               <div class="col-md-6 col-lg-7 mb-5 mb-lg-0">
                 <figure class="preview preview-mw">
-                  <img class="preview-pic" src="img/img-m-3.png" srcset="img/img-m-3@2x.png 2x" alt="">
+                  <img class="preview-pic" src="img/img-e-3.png" srcset="img/img-e-3@2x.png 2x" alt="integrate with your favourite calendar">
                 </figure>
               </div>
               <div class="col-md-6 col-lg-5">
                 <div class="wrap">
-                  <div class="title title-2">Easy leave approvals</div>
-                  <div class="text">Leave requests are instantly sent to managers for approval. Customize the approval workflow to let leaves to get auto-approved or require multi-level approvals.</div>
-                  <a class="btn btn-primary" href="#req-access">Approve leaves super fast</a>
+                  <div class="title title-2">與您喜愛的日曆合併</div>
+                  <div class="text">上傳您的請假歷程到您公司的GOOGLE、APPLE、或是OUTLOOK日歷。在SLACK上設立訊息直接幫您在假期時自動回覆。將您的請假規劃透明化並讓團隊人員們理解與增進彼此之間的協調。</div>
+                  <a class="btn btn-primary" href="#req-access">我需要同步日曆</a>
                 </div>
               </div>
             </div>
@@ -190,14 +188,14 @@
             <div class="row">
               <div class="col-md-6 mb-5 mb-lg-0">
                 <div class="wrap">
-                  <div class="title title-2">Generate powerful reports and summaries</div>
-                  <div class="text">Get summaries for the team’s leaves right inside Slack in an instant. Download various excel reports to suit your needs. Make sure everyone knowswhere everyone else is at anytime.</div>
-                  <a class="btn btn-primary" href="#req-access">Let’s generate some reports</a>
+                  <div class="title title-2">請假總結報告</div>
+                  <div class="text">在SLACK上邀請Timlio機器人，並會在早晨與傍晚時接收到自動請假總接報告，讓您好以配合與規劃同事們請假的日子工作。</div>
+                  <a class="btn btn-primary" href="#req-access">我想在SLACK上收到總結報告</a>
                 </div>
               </div>
               <div class="col-md-6">
                 <figure class="preview">
-                  <img class="preview-pic" src="img/img-m-4.png" srcset="img/img-m-4@2x.png 2x" alt="">
+                  <img class="preview-pic" src="img/img-e-4.png" srcset="img/img-e-4@2x.png 2x" alt="summary announcements">
                 </figure>
               </div>
             </div>
@@ -214,20 +212,24 @@
                 </figure>
               </div>
               <div id="req-access" class="col-md-7 col-xl-6">
-                <div class="title title-3">Request early access.</div>
-                <div class="text text-sm">Timlio is in closed beta now. Enter your email and we’ll get back to you if you’re a suitable user. 😊</div>
+                <div class="title title-3">請求提前訪問</div>
+                <div class="text text-sm">Timlio目前正在階段內測中。請留下您的電子郵件，我們在評估過後將會與您聯絡。😊</div>
                 <div class="subscribe">
                   
-                  <form class="subscribe-form" method="POST" action="https://gmail.us20.list-manage.com/subscribe/post?u=fcd4ce17c9e985129f1e17b2a&amp;id=ce5a794ca9" id="mc-embedded-subscribe-form" name="mc-embedded-subscribe-form" target="_blank">
+                  <form class="subscribe-form" id="mc-embedded-subscribe-form" name="mc-embedded-subscribe-form">
                     <div class="form-group">    
                       <input class="form-control" ype="email" value="" name="EMAIL" class="required email" id="mce-EMAIL" placeholder="Enter your email" required="">
                     </div>
                     <!-- real people should not fill this in and expect good things - do not remove this or risk form bot signups-->
                     <div style="position: absolute; left: -5000px;" aria-hidden="true"><input type="text" name="b_fcd4ce17c9e985129f1e17b2a_ce5a794ca9" tabindex="-1" value=""></div>
-                    <button class="btn btn-primary" type="submit" name="subscribe" id="mc-embedded-subscribe">Request Access</button>
+                    <button class="btn btn-primary"
+                            onclick="trackRequestAccess(document.getElementById('mce-EMAIL').value, document.documentElement.lang)"
+                            type="submit" name="subscribe" id="mc-embedded-subscribe">
+                      請求訪問
+                    </button>
                   </form>
 
-                  <div class="subscribe-content">Free during closed beta · Quit any time. Check out <a href="#">Terms of Use</a>.</div>
+                  <div class="subscribe-content">Beta版本內側時免費 。 任何時間都可以停止 。 查看 <a href="#">使用條款</a>。</div>
                 </div>
               </div>
             </div>

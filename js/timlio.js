@@ -27,7 +27,7 @@ function trackRequestAccess(email, language) {
         "language": language
       }
     );
-    alert("Thank you!");
+    alert("You've successfully requested for access. We'll get back to you when Timlio is in beta. Thank you!");
   } else {
     alert("You have entered an invalid email address!");
   }

@@ -1,8 +1,8 @@
 <!doctype html>
-<html lang="en">
+<html lang="zh">
   <head>
     <meta charset="utf-8">
-    <title>Timlio - People ops by real people</title>
+    <title>Timlio - 真人來幫您人力運營</title>
     <meta http-equiv="X-UA-Compatible" content="IE=Edge">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <meta name="theme-color" content="#fff">
@@ -26,7 +26,7 @@
     <meta name="twitter:creator" content="">
     <meta name="twitter:image" content="">
     <!-- Open Graph data -->
-    <meta property="og:title" content="Timlio - People ops for Managers">
+    <meta property="og:title" content="Timlio - People ops by real people">
     <meta property="og:type" content="article">
     <meta property="og:url" content="">
     <meta property="og:image" content="">
@@ -47,7 +47,7 @@
               </div>
               <div class="navbar-group">
                 <div class="navbar-title">Timlio</div>
-                <div class="navbar-text">People ops by real people</div>
+                <div class="navbar-text">真人來幫您人力運營</div>
               </div>
             </a>
             <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarDropdown" aria-controls="navbarDropdown" aria-expanded="false" aria-label="Toggle navigation">
@@ -56,13 +56,13 @@
             <div class="collapse navbar-collapse" id="navbarDropdown">
               <ul class="navbar-nav">
                 <li class="nav-item">
-                  <a class="nav-link" href="index.html">Home</a>
+                  <a class="nav-link active" href="#" id="home">首頁</a>
                 </li>
                 <li class="nav-item">
-                  <a class="nav-link" href="about-us.html">About Us</a>
+                  <a class="nav-link" href="about-us.html" id="about-us" onclick="trackGoToPage(this.id)">關於我們</a>
                 </li>
                 <li class="nav-item">
-                  <a class="nav-link" href="pricing.html">Pricing</a>
+                  <a class="nav-link" href="pricing-zh.html" id="pricing" onclick="trackGoToPage(this.id)">定價</a>
                 </li>
                 <li class="nav-item">
                   <a class="nav-link nav-link-drop" href="#">
@@ -74,137 +74,110 @@
                   <div class="nav-drop">
                     <div>
                       <div class="col-md-6">
-                        <a class="nav-group disabled" href="#">
+                        <a class="nav-group" href="index.html">
                           <div class="nav-title">English</div>
                         </a>
                       </div>
                       <div class="col-md-6">
-                        <a class="nav-group" href="im-a-manager-zh.html">
-                          <div class="nav-title">中文</div>
+                        <a class="nav-group disabled" href="#">
+                          <div class="nav-title" id="zh" onclick="trackChangeLanguage(this.id)">中文</div>
                         </a>
                       </div>
                       <div class="col-md-6">
                         <a class="nav-group" href="#">
-                          <div class="nav-title">বাংলা</div>
+                          <div class="nav-title" id="bd" onclick="trackChangeLanguage(this.id)">বাংলা</div>
                         </a>
                       </div>
                       <div class="col-md-6">
-                        <a class="nav-group" href="#">
-                          <div class="nav-title">bahasa Indonesia</div>
+                        <a class="nav-group" href="index-id.html">
+                          <div class="nav-title" id="id" onclick="trackChangeLanguage(this.id)">bahasa Indonesia</div>
                         </a>
                       </div>
                     </div>
                   </div>
                 </li>
               </ul>
-              <a class="btn btn-primary" href="#req-access">Request Access</a>
+              <a class="btn btn-primary" href="#req-access">請求訪問</a>
             </div>
           </nav>
         </div>
       </header>
       <!-- END header -->
 
+
       <!-- BEGIN inner -->
       <div class="inner">
-        <div class="section section-main" style="background-image: linear-gradient(0deg, #FFE000 0%, #FFFF00 100%)">
-          <div class="container">
-            <div class="section-body">
-              <h1 class="title">You’re the CEO / HR manager of a company.</h1>
-              <div class="text">Companies that encourage employee time off have better retention and profitability. Timlio can make time off management in your company super easy.</div>
-              <div class="preview">
-                <img class="preview-pic" src="img/img-im-a-manager.png" srcset="img/img-im-a-manager@2x.png 2x" alt="I'm a manager">
-              </div>
-            </div>
-          </div>
-        </div>
 
-        <!-- BEGIN feature-1 -->
-        <div class="section">
-          <div class="container">
-            <div class="row">
-              <div class="col-md-6 col-lg-7 mb-5 mb-lg-0">
-                <figure class="preview preview-mw">
-                  <img class="preview-pic" src="img/img-m-1.png" srcset="img/img-m-1@2x.png 2x" alt="">
-                </figure>
-              </div>
-              <div class="col-md-6 col-lg-5">
-                <div class="wrap">
-                  <div class="title title-2">Create your own leave types</div>
-                  <div class="text">Setup your own set of leave types ranging from PTO, Vacation, Sick Days, Paternity Leave, Jury Duty, Bereavement Leave or anything else.</div>
-                  <a class="btn btn-primary" href="#req-access" id="create-leave-types"
-                    onclick="trackShowInterest(this.id)">
-                    I want to define different leaves
-                  </a>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-        <!-- END feature-1 -->
 
-        <!-- BEGIN feature-2 -->
         <div class="section">
           <div class="container">
             <div class="row">
               <div class="col-md-6 mb-5 mb-lg-0">
                 <div class="wrap">
-                  <div class="title title-2">Implement custom leave policies</div>
-                  <div class="text">Setup rules for leave accrual and define quotas for each leave type, how they carry over from year to year, whether leaves are taken in whole days or hourly. Need an exception? Managers can always overwrite people’s leave balances.</div>
-                  <a class="btn btn-primary" href="#req-access">Let’s start defining policies</a>
+                  <div class="theme" style="color: #807F81">更佳的人員管理方案</div>
+                  <div class="title title-2">適用新創公司的請假系統</div>
+                  <div class="text">讓你輕鬆的處理員工的休假請求，便於</div>
+                  <a class="btn btn-primary" href="#req-access">請求訪問</a>
                 </div>
               </div>
               <div class="col-md-6">
                 <figure class="preview">
-                  <img class="preview-pic" src="img/img-m-2.png" srcset="img/img-m-2@2x.png 2x" alt="">
+                  <img class="preview-pic" src="img/img-1.png" srcset="img/img-1@2x.png 2x" alt="">
                 </figure>
               </div>
             </div>
-          </div>
-        </div>
-        <!-- END feature-2 -->
-
-        <!-- BEGIN feature-3 -->
-        <div class="section">
-          <div class="container">
-            <div class="row">
-              <div class="col-md-6 col-lg-7 mb-5 mb-lg-0">
-                <figure class="preview preview-mw">
-                  <img class="preview-pic" src="img/img-m-3.png" srcset="img/img-m-3@2x.png 2x" alt="">
-                </figure>
+            <div class="hr"></div>
+            <div class="center">
+              <div class="title title-2">No more manual spreadsheets & email back and forth</div>
+              <div class="text">Save countless hours of work by taking leave applications out of email threads and manual spreadsheets and start time off requests instantly!</div>
+              <img class="preview-pic" src="img/img-flow.png" srcset="img/img-flow@2x.png 2x" alt="">
+            </div>
+            <div class="row mb-100">
+              <div class="col-md-4 mb-5 mb-lg-0">
+                <div class="benefit">
+                  <div class="benefit-content"><strong>Access time off history instantly:</strong><br>Find all important information in one dashboard. Get rid of unnecessary clutter and filter all employees’ time of records by month or year.</div>
+                </div>
               </div>
-              <div class="col-md-6 col-lg-5">
-                <div class="wrap">
-                  <div class="title title-2">Easy leave approvals</div>
-                  <div class="text">Leave requests are instantly sent to managers for approval. Customize the approval workflow to let leaves to get auto-approved or require multi-level approvals.</div>
-                  <a class="btn btn-primary" href="#req-access">Approve leaves super fast</a>
+              <div class="col-md-4 mb-5 mb-lg-0">
+                <div class="benefit">
+                  <div class="benefit-content"><strong>Customizable annual leave policies:</strong><br>Set up time off policies once and guarantee accurate leave balances, allowances, and types of leave for each individual employee.</div>
+                </div>
+              </div>
+              <div class="col-md-4">
+                <div class="benefit">
+                  <div class="benefit-content"><strong>Effortless single-click validation:</strong><br>Save time with single click leave requests and approvals. Also see leave balances, awaiting requests and who’s out of office at a glance.</div>
+                </div>
+              </div>
+            </div>
+            <div class="title title-4 text-center">Timlio makes officework more fun and efficient – for employer and employees, both!</div>
+            <div class="row">
+              <div class="col-lg-6 mb-3 mb-lg-0">
+                <div class="service service-horz">
+                  <div class="service-preview">
+                    <img class="service-pic" src="img/img-2.png" srcset="img/img-2@2x.png 2x" alt="">
+                  </div>
+                  <div class="service-group">
+                    <div class="service-title">I’m a Manager / CEO / HR</div>
+                    <div class="service-text">Using Timlio can result in better retention and higher profitability.</div>
+                    <a class="link" href="im-a-manager-zh.html">Learn more</a>
+                  </div>
+                </div>
+              </div>
+              <div class="col-lg-6">
+                <div class="service service-horz">
+                  <div class="service-preview">
+                    <img class="service-pic" src="img/img-3.png" srcset="img/img-3@2x.png 2x" alt="">
+                  </div>
+                  <div class="service-group">
+                    <div class="service-title">I’m an engineer / employee</div>
+                    <div class="service-text">When you use Timlio, colleagues in your team stay better synced.</div>
+                    <a class="link" href="im-an-employee-zh.html">Learn more</a>
+                  </div>
                 </div>
               </div>
             </div>
           </div>
         </div>
-        <!-- END feature-3 -->
-
-        <!-- BEGIN feature-4 -->
-        <div class="section">
-          <div class="container">
-            <div class="row">
-              <div class="col-md-6 mb-5 mb-lg-0">
-                <div class="wrap">
-                  <div class="title title-2">Generate powerful reports and summaries</div>
-                  <div class="text">Get summaries for the team’s leaves right inside Slack in an instant. Download various excel reports to suit your needs. Make sure everyone knowswhere everyone else is at anytime.</div>
-                  <a class="btn btn-primary" href="#req-access">Let’s generate some reports</a>
-                </div>
-              </div>
-              <div class="col-md-6">
-                <figure class="preview">
-                  <img class="preview-pic" src="img/img-m-4.png" srcset="img/img-m-4@2x.png 2x" alt="">
-                </figure>
-              </div>
-            </div>
-          </div>
-        </div>
-        <!-- END feature-4 -->
-
         <div class="section section-sm section-darkPurple">
           <div class="container">
             <div class="row align-items-center">
@@ -214,20 +187,24 @@
                 </figure>
               </div>
               <div id="req-access" class="col-md-7 col-xl-6">
-                <div class="title title-3">Request early access.</div>
-                <div class="text text-sm">Timlio is in closed beta now. Enter your email and we’ll get back to you if you’re a suitable user. 😊</div>
+                <div class="title title-3">請求提前訪問</div>
+                <div class="text text-sm">Timlio目前正在階段內測中。請留下您的電子郵件，我們在評估過後將會與您聯絡。😊</div>
                 <div class="subscribe">
                   
-                  <form class="subscribe-form" method="POST" action="https://gmail.us20.list-manage.com/subscribe/post?u=fcd4ce17c9e985129f1e17b2a&amp;id=ce5a794ca9" id="mc-embedded-subscribe-form" name="mc-embedded-subscribe-form" target="_blank">
+                  <form class="subscribe-form" id="mc-embedded-subscribe-form" name="mc-embedded-subscribe-form">
                     <div class="form-group">    
                       <input class="form-control" ype="email" value="" name="EMAIL" class="required email" id="mce-EMAIL" placeholder="Enter your email" required="">
                     </div>
                     <!-- real people should not fill this in and expect good things - do not remove this or risk form bot signups-->
                     <div style="position: absolute; left: -5000px;" aria-hidden="true"><input type="text" name="b_fcd4ce17c9e985129f1e17b2a_ce5a794ca9" tabindex="-1" value=""></div>
-                    <button class="btn btn-primary" type="submit" name="subscribe" id="mc-embedded-subscribe">Request Access</button>
+                    <button class="btn btn-primary"
+                            onclick="trackRequestAccess(document.getElementById('mce-EMAIL').value, document.documentElement.lang)"
+                            type="submit" name="subscribe" id="mc-embedded-subscribe">
+                      請求訪問
+                    </button>
                   </form>
 
-                  <div class="subscribe-content">Free during closed beta · Quit any time. Check out <a href="#">Terms of Use</a>.</div>
+                  <div class="subscribe-content">Beta版本內側時免費 。 任何時間都可以停止 。 查看 <a href="#">使用條款</a>。</div>
                 </div>
               </div>
             </div>
