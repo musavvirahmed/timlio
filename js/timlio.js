@@ -42,15 +42,6 @@ function trackShowInterest(placement) {
   );
 }
 
-function trackGoToPage(targetPage) {
-  mixpanel.track(
-    "Go to Page",
-    {
-      "target-page": targetPage
-    }
-  );
-}
-
 function trackChangeLanguage(language) {
   mixpanel.track(
     "Change Language",
