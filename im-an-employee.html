@@ -80,24 +80,24 @@
                       </div>
                       <div class="col-md-6">
                         <a class="nav-group" href="im-an-employee-zh.html">
-                          <div class="nav-title">中文</div>
+                          <div class="nav-title" id="zh" onclick="trackChangeLanguage(this.id)">中文</div>
                         </a>
                       </div>
                       <div class="col-md-6">
                         <a class="nav-group" href="#">
-                          <div class="nav-title">বাংলা</div>
+                          <div class="nav-title" id="bd" onclick="trackChangeLanguage(this.id)">বাংলা</div>
                         </a>
                       </div>
                       <div class="col-md-6">
                         <a class="nav-group" href="#">
-                          <div class="nav-title">bahasa Indonesia</div>
+                          <div class="nav-title" id="id" onclick="trackChangeLanguage(this.id)">bahasa Indonesia</div>
                         </a>
                       </div>
                     </div>
                   </div>
                 </li>
               </ul>
-              <a class="btn btn-primary" href="#req-access">Request Access</a>
+              <a class="btn btn-primary" href="#req-access" id="header-button" onclick="trackShowInterest(this.id)">Request Access</a>
             </div>
           </nav>
         </div>
@@ -132,7 +132,7 @@
                 <div class="wrap">
                   <div class="title title-2">Employee balances and requests</div>
                   <div class="text">All employees have access to a beautiful time-off page containing available balance, time-off requests and a history of all previous time-off activity.</div>
-                  <a class="btn btn-primary" href="#req-access">I want this for myself</a>
+                  <a class="btn btn-primary" href="#req-access" id="balances-and-requests-button" onclick="trackShowInterest(this.id)">I want this for myself</a>
                 </div>
               </div>
             </div>
@@ -148,7 +148,7 @@
                 <div class="wrap">
                   <div class="title title-2">Simple control</div>
                   <div class="text">Send messages like ‘sick today’ or ‘on leave from 25th Jan to 28th Jan’ or ‘WFH tomorrow’ on slack to initiate a time off request.</div>
-                  <a class="btn btn-primary" href="#req-access">I want to use Slack like this</a>
+                  <a class="btn btn-primary" href="#req-access" id="simple-control-button" onclick="trackShowInterest(this.id)">I want to use Slack like this</a>
                 </div>
               </div>
               <div class="col-md-6">
@@ -174,7 +174,7 @@
                 <div class="wrap">
                   <div class="title title-2">Integrate with your favourite calendar</div>
                   <div class="text">Push your leaves to your company's Google, Apple or Outlook calendar instantly. Set up vacation auto responders directly from Slack. Give visibility to the entire team and improve alignment.</div>
-                  <a class="btn btn-primary" href="#req-access">I need calendar sync</a>
+                  <a class="btn btn-primary" href="#req-access" id="calendar-sync-button" onclick="trackShowInterest(this.id)">I need calendar sync</a>
                 </div>
               </div>
             </div>
@@ -190,7 +190,7 @@
                 <div class="wrap">
                   <div class="title title-2">Summary announcements</div>
                   <div class="text">Invite Timlio’s bot to your slack and get automatic summary announcements in the morning and evening so you can plan your work day around your colleagues' off days.</div>
-                  <a class="btn btn-primary" href="#req-access">I want summary messages on Slack</a>
+                  <a class="btn btn-primary" href="#req-access" id="summary-announcements-button" onclick="trackShowInterest(this.id)">I want summary messages on Slack</a>
                 </div>
               </div>
               <div class="col-md-6">
@@ -222,7 +222,7 @@
                     </div>
                     <!-- real people should not fill this in and expect good things - do not remove this or risk form bot signups-->
                     <div style="position: absolute; left: -5000px;" aria-hidden="true"><input type="text" name="b_fcd4ce17c9e985129f1e17b2a_ce5a794ca9" tabindex="-1" value=""></div>
-                    <button class="btn btn-primary" type="submit" name="subscribe" id="mc-embedded-subscribe">Request Access</button>
+                    <button class="btn btn-primary" type="submit" name="subscribe" id="mc-embedded-subscribe" onclick="trackRequestAccess(document.getElementById('mce-EMAIL').value, document.documentElement.lang)">Request Access</button>
                   </form>
 
                   <div class="subscribe-content">Free during closed beta · Quit any time. Check out <a href="#">Terms of Use</a>.</div>

@@ -75,17 +75,17 @@
                     <div>
                       <div class="col-md-6">
                         <a class="nav-group" href="index.html">
-                          <div class="nav-title">English</div>
+                          <div class="nav-title" id="en" onclick="trackChangeLanguage(this.id)">English</div>
                         </a>
                       </div>
                       <div class="col-md-6">
                         <a class="nav-group" href="#">
-                          <div class="nav-title">中文</div>
+                          <div class="nav-title" id="zh" onclick="trackChangeLanguage(this.id)">中文</div>
                         </a>
                       </div>
                       <div class="col-md-6">
                         <a class="nav-group" href="#">
-                          <div class="nav-title">বাংলা</div>
+                          <div class="nav-title" id="bd" onclick="trackChangeLanguage(this.id)">বাংলা</div>
                         </a>
                       </div>
                       <div class="col-md-6">
@@ -97,7 +97,7 @@
                   </div>
                 </li>
               </ul>
-              <a class="btn btn-primary" href="#req-access">Minta Akses</a>
+              <a class="btn btn-primary" href="#req-access" id="header-button" onclick="trackShowInterest(this.id)">Minta Akses</a>
             </div>
           </nav>
         </div>
@@ -117,7 +117,7 @@
                   <div class="theme" style="color: #807F81">Atur karyawan dengan lebih baik</div>
                   <div class="title title-2">Manajemen cuti yang mudah untuk startup</div>
                   <div class="text">Atur dengan mudah karyawan Anda, permintaan mereka untuk liburan, cuti, dan lihat betapa luar biasanya mereka.</div>
-                  <a class="btn btn-primary" href="#req-access">Minta Akses</a>
+                  <a class="btn btn-primary" href="#req-access" id="landing-button" onclick="trackShowInterest(this.id)">Minta Akses</a>
                 </div>
               </div>
               <div class="col-md-6">
@@ -197,7 +197,7 @@
                     </div>
                     <!-- real people should not fill this in and expect good things - do not remove this or risk form bot signups-->
                     <div style="position: absolute; left: -5000px;" aria-hidden="true"><input type="text" name="b_fcd4ce17c9e985129f1e17b2a_ce5a794ca9" tabindex="-1" value=""></div>
-                    <button class="btn btn-primary" type="submit" name="subscribe" id="mc-embedded-subscribe">Minta Akses</button>
+                    <button class="btn btn-primary" type="submit" name="subscribe" id="mc-embedded-subscribe" onclick="trackRequestAccess(document.getElementById('mce-EMAIL').value, document.documentElement.lang)">Minta Akses</button>
                   </form>
 
                   <div class="subscribe-content">Gratis selama closed beta · Berhenti kapan saja. Periksa <a href="#">Syarat Penggunaan</a>.</div>
