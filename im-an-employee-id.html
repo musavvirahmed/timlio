@@ -1,8 +1,8 @@
 <!doctype html>
-<html lang="zh">
+<html lang="id">
   <head>
     <meta charset="utf-8">
-    <title>Timlio - 真人來幫您人力管理</title>
+    <title>Timlio - Ops karyawan oleh orang sungguhan</title>
     <meta http-equiv="X-UA-Compatible" content="IE=Edge">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <meta name="theme-color" content="#fff">
@@ -33,11 +33,6 @@
     <meta property="og:description" content="">
     <meta property="og:site_name" content="">
     <meta property="fb:admins" content="">
-    <!-- Facebook Pixel Code -->
-    <noscript><img height="1" width="1" style="display:none"
-      src="https://www.facebook.com/tr?id=1486690068226840&ev=PageView&noscript=1"
-    /></noscript>
-    <!-- End Facebook Pixel Code -->    
   </head>
   <body onload="trackPageLoaded()">
     <!-- BEGIN page -->
@@ -46,13 +41,13 @@
       <header class="header header-main">
         <div class="container">
           <nav class="navbar navbar-expand-lg">
-            <a class="navbar-brand" href="#">
+            <a class="navbar-brand" href="/">
               <div class="navbar-logo">
                 <img class="navbar-pic" src="img/timlio-logo.png" srcset="img/timlio-logo@2x.png 2x" alt="Foundation">
               </div>
               <div class="navbar-group">
                 <div class="navbar-title">Timlio</div>
-                <div class="navbar-text">真人來幫您人力運營</div>
+                <div class="navbar-text">People ops by real people</div>
               </div>
             </a>
             <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarDropdown" aria-controls="navbarDropdown" aria-expanded="false" aria-label="Toggle navigation">
@@ -61,13 +56,13 @@
             <div class="collapse navbar-collapse" id="navbarDropdown">
               <ul class="navbar-nav">
                 <li class="nav-item">
-                  <a class="nav-link active" href="#" id="home">首頁</a>
+                  <a class="nav-link" href="index.html">Home</a>
                 </li>
                 <li class="nav-item">
-                  <a class="nav-link" href="about-us.html" id="about-us" onclick="trackGoToPage(this.id)">關於我們</a>
+                  <a class="nav-link" href="about-us.html">About Us</a>
                 </li>
                 <li class="nav-item">
-                  <a class="nav-link" href="pricing-zh.html" id="pricing" onclick="trackGoToPage(this.id)">定價</a>
+                  <a class="nav-link" href="pricing.html">Pricing</a>
                 </li>
                 <li class="nav-item">
                   <a class="nav-link nav-link-drop" href="#">
@@ -79,22 +74,22 @@
                   <div class="nav-drop">
                     <div>
                       <div class="col-md-6">
-                        <a class="nav-group" href="index.html">
+                        <a class="nav-group disabled" href="#">
                           <div class="nav-title">English</div>
                         </a>
                       </div>
                       <div class="col-md-6">
-                        <a class="nav-group disabled" href="#">
+                        <a class="nav-group" href="im-an-employee-zh.html">
                           <div class="nav-title" id="zh" onclick="trackChangeLanguage(this.id)">中文</div>
                         </a>
                       </div>
                       <div class="col-md-6">
-                        <a class="nav-group" href="index-bn.html">
+                        <a class="nav-group" href="#">
                           <div class="nav-title" id="bd" onclick="trackChangeLanguage(this.id)">বাংলা</div>
                         </a>
                       </div>
                       <div class="col-md-6">
-                        <a class="nav-group" href="index-id.html">
+                        <a class="nav-group" href="#">
                           <div class="nav-title" id="id" onclick="trackChangeLanguage(this.id)">bahasa Indonesia</div>
                         </a>
                       </div>
@@ -102,7 +97,7 @@
                   </div>
                 </li>
               </ul>
-              <a class="btn btn-primary" href="#req-access">請求訪問</a>
+              <a class="btn btn-primary" href="#req-access" id="header-button" onclick="trackShowInterest(this.id)">Request Access</a>
             </div>
           </nav>
         </div>
@@ -112,77 +107,102 @@
 
       <!-- BEGIN inner -->
       <div class="inner">
+        <div class="section section-main" style="background-image: linear-gradient(0deg, #92DEFF 0%, #CAF4FF 100%)">
+          <div class="container">
+            <div class="section-body">
+              <h1 class="title">If you’re an employee, how can Timlio help?</h1>
+              <div class="text">Timlio enables you to request vacation and time off from anywhere, anytime. This way everyone in the team stays updated & synchronized.</div>
+              <div class="preview">
+                <img class="preview-pic" src="img/img-im-an-employee.png" srcset="img/img-im-an-employee@2x.png 2x" alt="I'm an employee">
+              </div>
+            </div>
+          </div>
+        </div>
 
-
+        <!-- BEGIN feature-1 -->
         <div class="section">
           <div class="container">
             <div class="row">
-              <div class="col-md-6 mb-5 mb-lg-0">
-                <div class="wrap">
-                  <div class="theme" style="color: #807F81">更佳的人員管理方案</div>
-                  <div class="title title-2">適用新創公司的請假系統</div>
-                  <div class="text">讓你輕鬆的處理員工的休假請求，便於</div>
-                  <a class="btn btn-primary" href="#req-access">請求訪問</a>
-                </div>
-              </div>
-              <div class="col-md-6">
-                <figure class="preview">
-                  <img class="preview-pic" src="img/img-1.png" srcset="img/img-1@2x.png 2x" alt="">
+              <div class="col-md-6 col-lg-7 mb-5 mb-lg-0">
+                <figure class="preview preview-mw">
+                  <img class="preview-pic" src="img/img-e-1.png" srcset="img/img-e-1@2x.png 2x" alt="employee balances and requests">
                 </figure>
               </div>
-            </div>
-            <div class="hr"></div>
-            <div class="center">
-              <div class="title title-2">No more manual spreadsheets & email back and forth</div>
-              <div class="text">Save countless hours of work by taking leave applications out of email threads and manual spreadsheets and start time off requests instantly!</div>
-              <img class="preview-pic" src="img/img-flow.png" srcset="img/img-flow@2x.png 2x" alt="">
-            </div>
-            <div class="row mb-100">
-              <div class="col-md-4 mb-5 mb-lg-0">
-                <div class="benefit">
-                  <div class="benefit-content"><strong>Access time off history instantly:</strong><br>Find all important information in one dashboard. Get rid of unnecessary clutter and filter all employees’ time of records by month or year.</div>
-                </div>
-              </div>
-              <div class="col-md-4 mb-5 mb-lg-0">
-                <div class="benefit">
-                  <div class="benefit-content"><strong>Customizable annual leave policies:</strong><br>Set up time off policies once and guarantee accurate leave balances, allowances, and types of leave for each individual employee.</div>
-                </div>
-              </div>
-              <div class="col-md-4">
-                <div class="benefit">
-                  <div class="benefit-content"><strong>Effortless single-click validation:</strong><br>Save time with single click leave requests and approvals. Also see leave balances, awaiting requests and who’s out of office at a glance.</div>
-                </div>
-              </div>
-            </div>
-            <div class="title title-4 text-center">Timlio makes officework more fun and efficient – for employer and employees, both!</div>
-            <div class="row">
-              <div class="col-lg-6 mb-3 mb-lg-0">
-                <div class="service service-horz">
-                  <div class="service-preview">
-                    <img class="service-pic" src="img/img-2.png" srcset="img/img-2@2x.png 2x" alt="">
-                  </div>
-                  <div class="service-group">
-                    <div class="service-title">I’m a Manager / CEO / HR</div>
-                    <div class="service-text">Using Timlio can result in better retention and higher profitability.</div>
-                    <a class="link" href="im-a-manager-zh.html">Learn more</a>
-                  </div>
-                </div>
-              </div>
-              <div class="col-lg-6">
-                <div class="service service-horz">
-                  <div class="service-preview">
-                    <img class="service-pic" src="img/img-3.png" srcset="img/img-3@2x.png 2x" alt="">
-                  </div>
-                  <div class="service-group">
-                    <div class="service-title">I’m an engineer / employee</div>
-                    <div class="service-text">When you use Timlio, colleagues in your team stay better synced.</div>
-                    <a class="link" href="im-an-employee-zh.html">Learn more</a>
-                  </div>
+              <div class="col-md-6 col-lg-5">
+                <div class="wrap">
+                  <div class="title title-2">Employee balances and requests</div>
+                  <div class="text">All employees have access to a beautiful time-off page containing available balance, time-off requests and a history of all previous time-off activity.</div>
+                  <a class="btn btn-primary" href="#req-access" id="balances-and-requests-button" onclick="trackShowInterest(this.id)">I want this for myself</a>
                 </div>
               </div>
             </div>
           </div>
         </div>
+        <!-- END feature-1 -->
+
+        <!-- BEGIN feature-2 -->
+        <div class="section">
+          <div class="container">
+            <div class="row">
+              <div class="col-md-6 mb-5 mb-lg-0">
+                <div class="wrap">
+                  <div class="title title-2">Simple control</div>
+                  <div class="text">Send messages like ‘sick today’ or ‘on leave from 25th Jan to 28th Jan’ or ‘WFH tomorrow’ on slack to initiate a time off request.</div>
+                  <a class="btn btn-primary" href="#req-access" id="simple-control-button" onclick="trackShowInterest(this.id)">I want to use Slack like this</a>
+                </div>
+              </div>
+              <div class="col-md-6">
+                <figure class="preview">
+                  <img class="preview-pic" src="img/img-e-2.png" srcset="img/img-e-2@2x.png 2x" alt="simple control">
+                </figure>
+              </div>
+            </div>
+          </div>
+        </div>
+        <!-- END feature-2 -->
+
+        <!-- BEGIN feature-3 -->
+        <div class="section">
+          <div class="container">
+            <div class="row">
+              <div class="col-md-6 col-lg-7 mb-5 mb-lg-0">
+                <figure class="preview preview-mw">
+                  <img class="preview-pic" src="img/img-e-3.png" srcset="img/img-e-3@2x.png 2x" alt="integrate with your favourite calendar">
+                </figure>
+              </div>
+              <div class="col-md-6 col-lg-5">
+                <div class="wrap">
+                  <div class="title title-2">Integrate with your favourite calendar</div>
+                  <div class="text">Push your leaves to your company's Google, Apple or Outlook calendar instantly. Set up vacation auto responders directly from Slack. Give visibility to the entire team and improve alignment.</div>
+                  <a class="btn btn-primary" href="#req-access" id="calendar-sync-button" onclick="trackShowInterest(this.id)">I need calendar sync</a>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <!-- END feature-3 -->
+
+        <!-- BEGIN feature-4 -->
+        <div class="section">
+          <div class="container">
+            <div class="row">
+              <div class="col-md-6 mb-5 mb-lg-0">
+                <div class="wrap">
+                  <div class="title title-2">Summary announcements</div>
+                  <div class="text">Invite Timlio’s bot to your slack and get automatic summary announcements in the morning and evening so you can plan your work day around your colleagues' off days.</div>
+                  <a class="btn btn-primary" href="#req-access" id="summary-announcements-button" onclick="trackShowInterest(this.id)">I want summary messages on Slack</a>
+                </div>
+              </div>
+              <div class="col-md-6">
+                <figure class="preview">
+                  <img class="preview-pic" src="img/img-e-4.png" srcset="img/img-e-4@2x.png 2x" alt="summary announcements">
+                </figure>
+              </div>
+            </div>
+          </div>
+        </div>
+        <!-- END feature-4 -->
+
         <div class="section section-sm section-darkPurple">
           <div class="container">
             <div class="row align-items-center">
@@ -192,24 +212,20 @@
                 </figure>
               </div>
               <div id="req-access" class="col-md-7 col-xl-6">
-                <div class="title title-3">請求提前訪問</div>
-                <div class="text text-sm">Timlio目前正在階段內測中。請留下您的電子郵件，我們在評估過後將會與您聯絡。😊</div>
+                <div class="title title-3">Meminta akses awal.</div>
+                <div class="text text-sm">Timlio sekarang masih dalam tahap closed beta. Masukkan email Anda dan kami akan menghubungi Anda jika Anda adalah pengguna yang tepat. 😊</div>
                 <div class="subscribe">
                   
-                  <form class="subscribe-form" id="mc-embedded-subscribe-form" name="mc-embedded-subscribe-form">
+                  <form class="subscribe-form" method="POST" action="https://gmail.us20.list-manage.com/subscribe/post?u=fcd4ce17c9e985129f1e17b2a&amp;id=ce5a794ca9" id="mc-embedded-subscribe-form" name="mc-embedded-subscribe-form" target="_blank">
                     <div class="form-group">    
                       <input class="form-control" ype="email" value="" name="EMAIL" class="required email" id="mce-EMAIL" placeholder="Enter your email" required="">
                     </div>
                     <!-- real people should not fill this in and expect good things - do not remove this or risk form bot signups-->
                     <div style="position: absolute; left: -5000px;" aria-hidden="true"><input type="text" name="b_fcd4ce17c9e985129f1e17b2a_ce5a794ca9" tabindex="-1" value=""></div>
-                    <button class="btn btn-primary"
-                            onclick="trackRequestAccess(document.getElementById('mce-EMAIL').value, document.documentElement.lang)"
-                            type="submit" name="subscribe" id="mc-embedded-subscribe">
-                      請求訪問
-                    </button>
+                    <button class="btn btn-primary" type="submit" name="subscribe" id="mc-embedded-subscribe" onclick="trackRequestAccess(document.getElementById('mce-EMAIL').value, document.documentElement.lang)">Minta Akses</button>
                   </form>
 
-                  <div class="subscribe-content">Beta版本內側時免費 。 任何時間都可以停止 。 查看 <a href="#">使用條款</a>。</div>
+                  <div class="subscribe-content">Gratis selama closed beta · Berhenti kapan saja. Periksa <a href="#">Syarat Penggunaan</a>.</div>
                 </div>
               </div>
             </div>

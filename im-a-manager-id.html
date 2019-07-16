@@ -1,8 +1,8 @@
 <!doctype html>
-<html lang="zh">
+<html lang="id">
   <head>
     <meta charset="utf-8">
-    <title>Timlio - 真人來幫您人力管理</title>
+    <title>Timlio - Ops karyawan oleh orang sungguhan</title>
     <meta http-equiv="X-UA-Compatible" content="IE=Edge">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <meta name="theme-color" content="#fff">
@@ -26,7 +26,7 @@
     <meta name="twitter:creator" content="">
     <meta name="twitter:image" content="">
     <!-- Open Graph data -->
-    <meta property="og:title" content="Timlio - 真人來幫您人力運營">
+    <meta property="og:title" content="Timlio - People ops for Managers">
     <meta property="og:type" content="article">
     <meta property="og:url" content="">
     <meta property="og:image" content="">
@@ -41,13 +41,13 @@
       <header class="header header-main">
         <div class="container">
           <nav class="navbar navbar-expand-lg">
-            <a class="navbar-brand" href="index-zh.html">
+            <a class="navbar-brand" href="index-id.html">
               <div class="navbar-logo">
                 <img class="navbar-pic" src="img/timlio-logo.png" srcset="img/timlio-logo@2x.png 2x" alt="Foundation">
               </div>
               <div class="navbar-group">
                 <div class="navbar-title">Timlio</div>
-                <div class="navbar-text">真人來幫您人力運營</div>
+                <div class="navbar-text">People ops by real people</div>
               </div>
             </a>
             <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarDropdown" aria-controls="navbarDropdown" aria-expanded="false" aria-label="Toggle navigation">
@@ -56,13 +56,13 @@
             <div class="collapse navbar-collapse" id="navbarDropdown">
               <ul class="navbar-nav">
                 <li class="nav-item">
-                  <a class="nav-link" href="index-zh.html" id="home">首頁</a>
+                  <a class="nav-link" href="index-id.html">Home</a>
                 </li>
                 <li class="nav-item">
-                  <a class="nav-link" href="about-us-zh.html" id="about-us" onclick="trackGoToPage(this.id)">關於我們</a>
+                  <a class="nav-link" href="about-us-id.html">About Us</a>
                 </li>
                 <li class="nav-item">
-                  <a class="nav-link" href="pricing-zh.html" id="pricing" onclick="trackGoToPage(this.id)">定價</a>
+                  <a class="nav-link" href="pricing-id.html">Pricing</a>
                 </li>
                 <li class="nav-item">
                   <a class="nav-link nav-link-drop" href="#">
@@ -75,29 +75,29 @@
                     <div>
                       <div class="col-md-6">
                         <a class="nav-group" href="im-a-manager.html">
-                          <div class="nav-title">English</div>
+                          <div class="nav-title" id="en" onclick="trackChangeLanguage(this.id)">English</div>
                         </a>
                       </div>
                       <div class="col-md-6">
-                        <a class="nav-group disabled" href="#">
-                          <div class="nav-title">中文</div>
+                        <a class="nav-group" href="im-a-manager-zh.html">
+                          <div class="nav-title" id="zh" onclick="trackChangeLanguage(this.id)">中文</div>
                         </a>
                       </div>
                       <div class="col-md-6">
                         <a class="nav-group" href="im-a-manager-bn.html">
-                          <div class="nav-title">বাংলা</div>
+                          <div class="nav-title" id="bd" onclick="trackChangeLanguage(this.id)">বাংলা</div>
                         </a>
                       </div>
                       <div class="col-md-6">
-                        <a class="nav-group" href="im-a-manager-id.html">
-                          <div class="nav-title">bahasa Indonesia</div>
+                        <a class="nav-group disabled" href="im-a-manager-id.html">
+                          <div class="nav-title" id="id">bahasa Indonesia</div>
                         </a>
                       </div>
                     </div>
                   </div>
                 </li>
               </ul>
-              <a class="btn btn-primary" href="#req-access">請求訪問</a>
+              <a class="btn btn-primary" href="#req-access" id="header-button" onclick="trackShowInterest(this.id)">Request Access</a>
             </div>
           </nav>
         </div>
@@ -109,8 +109,8 @@
         <div class="section section-main" style="background-image: linear-gradient(0deg, #FFE000 0%, #FFFF00 100%)">
           <div class="container">
             <div class="section-body">
-              <h1 class="title">你是公司的執行長或是人資主管</h1>
-              <div class="text">鼓勵員工請假休息的公司，擁有較高的員工留職率與經濟效益。Timlio能幫您將管理公司的請假系統變得超級簡單。</div>
+              <h1 class="title">You’re the CEO / HR manager of a company.</h1>
+              <div class="text">Companies that encourage employee time off have better retention and profitability. Timlio can make time off management in your company super easy.</div>
               <div class="preview">
                 <img class="preview-pic" src="img/img-im-a-manager.png" srcset="img/img-im-a-manager@2x.png 2x" alt="I'm a manager">
               </div>
@@ -129,11 +129,10 @@
               </div>
               <div class="col-md-6 col-lg-5">
                 <div class="wrap">
-                  <div class="title title-2">客製化請假類別</div>
-                  <div class="text">自創與管理個人的請假類別，如：留職給薪假、病假、事假、產假、喪假、陪審團假等等。</div>
-                  <a class="btn btn-primary" href="#req-access" id="create-leave-types"
-                    onclick="trackShowInterest(this.id)">
-                    我想要自己定義請假類別
+                  <div class="title title-2">Create your own leave types</div>
+                  <div class="text">Setup your own set of leave types ranging from PTO, Vacation, Sick Days, Paternity Leave, Jury Duty, Bereavement Leave or anything else.</div>
+                  <a class="btn btn-primary" href="#req-access" id="create-leave-types" onclick="trackShowInterest(this.id)">
+                    I want to define different leaves
                   </a>
                 </div>
               </div>
@@ -148,9 +147,9 @@
             <div class="row">
               <div class="col-md-6 mb-5 mb-lg-0">
                 <div class="wrap">
-                  <div class="title title-2">實施客製化的請假規則</div>
-                  <div class="text">您可以客製化各類假別的各項規則，如：請假時數累計方法，是否能將時數以年累計，或是以時數或整天計算等等規定。需要特例嗎？主管們能夠覆蓋重寫任何人的請假時數總額。</div>
-                  <a class="btn btn-primary" href="#req-access">開始撰寫請假規則</a>
+                  <div class="title title-2">Implement custom leave policies</div>
+                  <div class="text">Setup rules for leave accrual and define quotas for each leave type, how they carry over from year to year, whether leaves are taken in whole days or hourly. Need an exception? Managers can always overwrite people’s leave balances.</div>
+                  <a class="btn btn-primary" href="#req-access" id="implement-leave-policies" onclick="trackShowInterest(this.id)">Let’s start defining policies</a>
                 </div>
               </div>
               <div class="col-md-6">
@@ -174,9 +173,9 @@
               </div>
               <div class="col-md-6 col-lg-5">
                 <div class="wrap">
-                  <div class="title title-2">迅速核准請假申請</div>
-                  <div class="text">主管將可以立即收到請假申請並且迅速核准。您可以客製化獨特的准假流程，使請假申請自動獲准，或是需要多層批准。</div>
-                  <a class="btn btn-primary" href="#req-access">迅速准假</a>
+                  <div class="title title-2">Easy leave approvals</div>
+                  <div class="text">Leave requests are instantly sent to managers for approval. Customize the approval workflow to let leaves to get auto-approved or require multi-level approvals.</div>
+                  <a class="btn btn-primary" href="#req-access" id="easy-leave-approval" onclick="trackShowInterest(this.id)">Approve leaves super fast</a>
                 </div>
               </div>
             </div>
@@ -190,9 +189,9 @@
             <div class="row">
               <div class="col-md-6 mb-5 mb-lg-0">
                 <div class="wrap">
-                  <div class="title title-2">生成強而有力的報告與請假總結</div>
-                  <div class="text">您可以在SLACK直接下載團隊人員們的請假次數總結與各類EXCEL報告來滿足您的各種需求。無論何時團員們皆能知道其他人的情況。</div>
-                  <a class="btn btn-primary" href="#req-access">來生成報告吧</a>
+                  <div class="title title-2">Generate powerful reports and summaries</div>
+                  <div class="text">Get summaries for the team’s leaves right inside Slack in an instant. Download various excel reports to suit your needs. Make sure everyone knowswhere everyone else is at anytime.</div>
+                  <a class="btn btn-primary" href="#req-access" id="generate-reports" onclick="trackShowInterest(this.id)">Let’s generate some reports</a>
                 </div>
               </div>
               <div class="col-md-6">
@@ -214,24 +213,20 @@
                 </figure>
               </div>
               <div id="req-access" class="col-md-7 col-xl-6">
-                <div class="title title-3">請求提前訪問</div>
-                <div class="text text-sm">Timlio目前正在階段內測中。請留下您的電子郵件，我們在評估過後將會與您聯絡。😊</div>
+                <div class="title title-3">Meminta akses awal.</div>
+                <div class="text text-sm">Timlio sekarang masih dalam tahap closed beta. Masukkan email Anda dan kami akan menghubungi Anda jika Anda adalah pengguna yang tepat. 😊</div>
                 <div class="subscribe">
                   
-                  <form class="subscribe-form" id="mc-embedded-subscribe-form" name="mc-embedded-subscribe-form">
+                  <form class="subscribe-form" method="POST" action="https://gmail.us20.list-manage.com/subscribe/post?u=fcd4ce17c9e985129f1e17b2a&amp;id=ce5a794ca9" id="mc-embedded-subscribe-form" name="mc-embedded-subscribe-form" target="_blank">
                     <div class="form-group">    
                       <input class="form-control" ype="email" value="" name="EMAIL" class="required email" id="mce-EMAIL" placeholder="Enter your email" required="">
                     </div>
                     <!-- real people should not fill this in and expect good things - do not remove this or risk form bot signups-->
                     <div style="position: absolute; left: -5000px;" aria-hidden="true"><input type="text" name="b_fcd4ce17c9e985129f1e17b2a_ce5a794ca9" tabindex="-1" value=""></div>
-                    <button class="btn btn-primary"
-                            onclick="trackRequestAccess(document.getElementById('mce-EMAIL').value, document.documentElement.lang)"
-                            type="submit" name="subscribe" id="mc-embedded-subscribe">
-                      請求訪問
-                    </button>
+                    <button class="btn btn-primary" type="submit" name="subscribe" id="mc-embedded-subscribe" onclick="trackRequestAccess(document.getElementById('mce-EMAIL').value, document.documentElement.lang)">Minta Akses</button>
                   </form>
 
-                  <div class="subscribe-content">Beta版本內側時免費 。 任何時間都可以停止 。 查看 <a href="#">使用條款</a>。</div>
+                  <div class="subscribe-content">Gratis selama closed beta · Berhenti kapan saja. Periksa <a href="#">Syarat Penggunaan</a>.</div>
                 </div>
               </div>
             </div>
