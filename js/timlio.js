@@ -27,6 +27,8 @@ function ValidateEmail(email) {
 function trackRequestAccess(email, language) {
   if (ValidateEmail(email)) {
 
+    fbq('track', 'Lead');
+
     mixpanel.register({
       "email": email
     });
@@ -47,6 +49,8 @@ function trackRequestAccess(email, language) {
 }
 
 function trackShowInterest(placement) {
+  fbq('track', 'InterestShown');
+  
   mixpanel.track(
     "Show Interest",
     {
@@ -65,6 +69,8 @@ function trackChangeLanguage(language) {
 }
 
 function trackPageLoaded() {
+  fbq('track', 'ViewContent');
+
   var from = document.referrer;
   mixpanel.track(
     "Page Loaded"
