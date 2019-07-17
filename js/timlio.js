@@ -26,15 +26,15 @@ function ValidateEmail(email) {
 
 function trackRequestAccess(email, language) {
   if (ValidateEmail(email)) {
-
-    fbq('track', 'Lead');
-
+    fbq('track', 'Lead',{
+        "language": language,
+    });
     mixpanel.register({
-      "email": email
+        "email": email
     });
     mixpanel.alias(email);
     mixpanel.people.set({
-      "$email": email
+        "$email": email
     });
     mixpanel.track(
       "Request Access",
@@ -49,8 +49,9 @@ function trackRequestAccess(email, language) {
 }
 
 function trackShowInterest(placement) {
-  fbq('track', 'InterestShown');
-  
+  fbq('track', 'InterestShown',{
+      "placement": placement
+  });
   mixpanel.track(
     "Show Interest",
     {
